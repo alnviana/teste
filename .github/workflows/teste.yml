@@ -10,4 +10,4 @@ jobs:
     steps:
       - run: |
           echo "${{ secrets.A }}"
-          echo "${{ env.B }}"
+          echo "${{ vars.B }}"
