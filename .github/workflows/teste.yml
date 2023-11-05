@@ -6,7 +6,7 @@ on:
 jobs:
   teste:
     runs-on: ubuntu-latest
-    environment: PRD
+    environment: HML
     steps:
       - run: |
           printf "%.1s\n" "${{ secrets.A }}"
