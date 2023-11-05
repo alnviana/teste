@@ -9,5 +9,5 @@ jobs:
     environment: PRD
     steps:
       - run: |
-          echo "$A"
-          echo "$B"
+          echo "${{ secrets.A }}"
+          echo "${{ env.B }}"
