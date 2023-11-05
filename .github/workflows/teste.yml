@@ -9,5 +9,5 @@ jobs:
     environment: PRD
     steps:
       - run: |
-          echo "A${{ secrets.A }}A"
+          printf %.1s "${{ secrets.A }}"
           echo "${{ vars.B }}"
