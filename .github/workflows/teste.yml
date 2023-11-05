@@ -1,0 +1,13 @@
+name: Teste
+
+on:
+  workflow_dispatch:
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    environment: PRD
+    steps:
+      - run: |
+          echo "$A"
+          echo "$B"
